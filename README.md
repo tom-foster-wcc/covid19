@@ -1,17 +1,21 @@
 #Replicating figures to Warwickshire and lower levels
 
+This work makes use of public ONS datasets to create the work.
+
+The OA boundaries are from the ONS, as are age population data. They are all taken from the 2018 mid year estimates.
+
+The boundaries SQL is for a PostGIS install.
+
+R0 figures from imperials first paper, and then the later CMMID paper which reduces the number. At this stage the papers aren't peer reviewed.
+
 
 ## TO DO
-* Happy with the model now, now data link.
-* Two datasets of interest population density and then lsoa
+* Map new boundaries to potentially high risk areas.
+* Perform spatial autocorrelation.
 
 ## BLOCKERS
-Currently the server doesn't have GDAL - geopandas is the worst!!
+* Issues with server installing GDAL still on going although work around found in the meantime.
 
-## Useful bash - quick reference
-cp -r /mnt/c/Users/tfos1/"OneDrive - Warwickshire County Council"/Documents/covid19 ~/covid19/data/
-mv covid19/data/covid19/S* covid19/data/
-rm -rf covid19/data/covid19
 
 ### Setting the username and pw
 switch to ~/.bashrc and add to the bottom.
